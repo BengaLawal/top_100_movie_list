@@ -1,5 +1,5 @@
 import os.path
-from ui import UserInterface
+from gui import UserInterface
 from soup import Soup
 
 
