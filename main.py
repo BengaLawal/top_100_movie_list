@@ -2,18 +2,7 @@ import os.path
 from gui import UserInterface
 from soup import Soup
 
-
-# give Soup class a variable
 soup = Soup()
-
-# checking if movie.txt has data in it
-# if it has data do nothing
-# if it doesn't have data make_soup() to get data
-# if os.path.isfile("movies.txt") and os.path.isdir("./img"):
-#     print("img dir and movies.txt exists")
-# else:
-#     soup.make_soup()
-#     print("made soup")
 
 if os.path.isfile("movies.txt") and os.path.isdir("./img"):
     with open("movies.txt", mode="r") as read_data:
@@ -25,7 +14,6 @@ if os.path.isfile("movies.txt") and os.path.isdir("./img"):
 else:
     soup.make_soup()
 
-# give UserInterface class a variable
 ui = UserInterface()
 
 # IDEAS
